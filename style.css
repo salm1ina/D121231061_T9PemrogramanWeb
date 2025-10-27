@@ -1,0 +1,179 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #eef3ff, #f7f9fc);
+  color: #1a1a1a;
+  scroll-behavior: smooth; 
+}
+
+/* --- NAVBAR --- */
+.navbar {
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px; 
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 44px;
+  height: auto;
+  display: block;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.navbar ul li a:hover {
+  color: #007bff;
+}
+
+/* --- HERO --- */
+.hero {
+  text-align: center;
+  padding: 40px 80px 60px; 
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #555;
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+.hero-image img {
+  width: 90%;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- TOPICS --- */
+.topics {
+  text-align: left;
+  padding: 100px 80px; 
+}
+
+.topics h2 {
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.card {
+  display: block;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- FOOTER --- */
+footer {
+  background: #e7edf9;
+  padding: 50px 80px; 
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.footer-left p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.credit {
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-right {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-right h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-right a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+/* --- FOOTER LOGO --- */
+.footer-logo {
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: auto;
+  display: block;
+}
