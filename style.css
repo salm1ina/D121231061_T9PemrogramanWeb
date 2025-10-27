@@ -1,11 +1,10 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
+/* Body */
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #eef3ff, #f7f9fc);
@@ -13,7 +12,7 @@ body {
   scroll-behavior: smooth; 
 }
 
-/* --- NAVBAR --- */
+/* Navbar */
 .navbar {
   position: sticky; 
   top: 0;
@@ -50,7 +49,7 @@ body {
   color: #007bff;
 }
 
-/* --- HERO --- */
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 40px 80px 60px; 
@@ -76,7 +75,7 @@ body {
   margin: 0 auto;
 }
 
-/* --- TOPICS --- */
+/* Learn Path */
 .topics {
   text-align: left;
   padding: 100px 80px; 
@@ -112,7 +111,7 @@ body {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* --- FOOTER --- */
+/* Footer */
 footer {
   background: #e7edf9;
   padding: 50px 80px; 
@@ -167,7 +166,7 @@ footer {
   text-decoration: underline;
 }
 
-/* --- FOOTER LOGO --- */
+/* Footer bagian logo */
 .footer-logo {
   margin-bottom: 15px;
 }
@@ -176,4 +175,128 @@ footer {
   width: 60px;
   height: auto;
   display: block;
+}
+
+/* Materi Dokumen */
+.materi-dokumen {
+  padding: 50px 80px 20px; 
+  max-width: 1200px; 
+  margin: 0 auto;
+  text-align: left; 
+}
+
+.materi-content {
+  padding: 0; 
+}
+
+.materi-dokumen h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.section-materi {
+  margin-bottom: 30px;
+}
+
+.section-materi h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1a1a1a; 
+}
+
+.section-body.with-image {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.text-content {
+  flex: 2; 
+}
+
+.materi-image-right {
+  flex: 1; 
+  flex-shrink: 0;
+  width: 100%;
+  padding-top: 5px;
+}
+
+.materi-image-right img {
+  width: 100%;
+  max-width: 400px; 
+  height: auto;
+  display: block;
+  margin: 0; 
+}
+
+.section-body p {
+  text-align: justify; 
+  line-height: 1.7; 
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 16px;
+}
+
+.working-diagram {
+  padding: 20px;
+  text-align: center; 
+}
+
+.working-diagram p {
+  text-align: left; 
+  margin-bottom: 10px;
+}
+
+.working-diagram img {
+  max-width: 500px; 
+  height: auto;
+  margin: 10px auto;
+  display: block;  
+}
+
+/* Sub-sections bagian Paket dan Protokol */
+.sub-section {
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+.sub-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.sumber {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto 40px; 
+  padding: 0 80px; 
+}
+
+/* Tombol Kembali */
+.back-button {
+  text-align: left;
+  max-width: 1200px;
+  margin: 20px auto 60px; 
+  padding: 0 80px; 
+}
+
+.back-button a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: text-decoration 0.2s;
+}
+
+.back-button a:hover {
+  text-decoration: underline;
+}
+
+.materi {
+  display: none; 
 }
