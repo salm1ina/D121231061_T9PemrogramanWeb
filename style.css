@@ -276,27 +276,79 @@ footer {
   padding: 0 80px; 
 }
 
-/* Tombol Kembali */
-.back-button {
-  text-align: left;
-  max-width: 1200px;
-  margin: 20px auto 60px; 
-  padding: 0 80px; 
-}
-
-.back-button a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 5px 10px;
-  transition: text-decoration 0.2s;
-}
-
-.back-button a:hover {
-  text-decoration: underline;
-}
 
 .materi {
   display: none; 
+}
+
+.image-pair-wrapper {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px; 
+  align-items: center; 
+
+.image-pair-wrapper img {
+  width: 100%; 
+  max-width: 250px; 
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: block; 
+  margin: 0 auto; 
+}
+
+.materi-image-below {
+    margin: 0;
+    padding: 0;
+    text-align: initial;
+}
+.materi-image-below img {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.materi-image-right img { 
+  display: none; 
+}
+
+/* ============= */
+.top-diagram-center {
+    text-align: center; 
+    margin-bottom: 30px; 
+    padding: 15px;
+}
+
+.top-diagram-center img {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.section-body.with-image {
+  display: block; 
+  gap: initial;
+  align-items: initial;
+}
+
+.section-body .text-content {
+  flex: initial; 
+  width: 100%;
+}
+
+.materi-image-below {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.materi-image-below img {
+    max-width: 70%; 
+    height: auto;
+    display: block;
+    margin: 30px auto;
+}
 }

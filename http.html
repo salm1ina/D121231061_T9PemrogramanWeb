@@ -17,25 +17,34 @@
     <nav>
       <ul>
         <li><a href="all.html">Home</a></li>
-        <li><a href="all.html">Learn Path</a></li>
+        <li><a href="all.html#Topics">Learn Path</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="materi-dokumen">
     <div class="materi-content">
-      <h1>Cara Kerja HTTPS</h1>
+      <h1>Cara Kerja HTTP dan HTTPS</h1>
 
       <div class="section-materi">
         <h2>Apa itu HTTPS?</h2>
-        <div class="section-body with-image">
+        
+        <div class="top-diagram-center">
+            <img src="images/pic-https.png" alt="Ilustrasi HTTPS Secure">
+        </div>
+
+        <div class="section-body no-image">
           <div class="text-content">
-            <p>Sebelum kita membahas apa itu Internet, kita harus mendefinisikan apa itu "jaringan". Jaringan adalah sekumpulan komputer yang terhubung dan dapat saling mengirim data. Jaringan komputer ibarat lingkaran sosial, yaitu sekelompok orang yang saling mengenal, bertukar informasi secara berkala, dan mengoordinasikan kegiatan bersama.</p>
-            <p>Internet adalah kumpulan jaringan yang luas dan tersebar yang saling terhubung. Bahkan, kata "Internet" dapat dikatakan berasal dari konsep ini: jaringan yang saling terhubung . Karena komputer terhubung satu sama lain dalam jaringan, dan jaringan-jaringan ini juga saling terhubung, satu komputer dapat berkomunikasi dengan komputer lain dalam jaringan yang jauh berkat internet. Hal ini memungkinkan pertukaran informasi antarkomputer di seluruh dunia dengan cepat.</p>
-            <p>Komputer terhubung satu sama lain dan ke internet melalui kabel, gelombang radio, dan berbagai jenis infrastruktur jaringan lainnya. Semua data yang dikirim melalui internet diterjemahkan menjadi pulsa cahaya atau listrik, yang juga disebut "bit", dan kemudian ditafsirkan oleh komputer penerima. Kabel, kawat, dan gelombang radio menghantarkan bit-bit ini dengan kecepatan cahaya. Semakin banyak bit yang dapat melewati kabel dan kawat ini sekaligus, semakin cepat internet bekerja.</p>
-          </div>
-          <div class="materi-image-right">
-            <img src="images\apa itu internet.png" alt="Ilustrasi Koneksi Internet">
+            <p>Protokol Transfer Hiperteks Aman (HTTPS) adalah versi aman dari HTTP , protokol utama yang digunakan untuk mengirim data antara peramban web dan situs web. HTTPS dienkripsi untuk meningkatkan keamanan transfer data. Hal ini khususnya penting ketika pengguna mengirimkan data sensitif, seperti saat masuk ke rekening bank, layanan email, atau penyedia asuransi kesehatan.</p>
+            <p>Situs web apa pun, terutama yang memerlukan kredensial masuk, harus menggunakan HTTPS. Di peramban web modern seperti Chrome, situs web yang tidak menggunakan HTTPS ditandai secara berbeda dengan situs web yang menggunakan HTTPS. Cari ikon gembok di bilah URL untuk menandakan halaman web tersebut aman.</p>
+            <p>Ketika Anda mengunjungi situs web yang menggunakan HTTPS, koneksi antara browser Anda dan server situs web tersebut dienkripsi (artinya diacak)
+               Ini melindungi data Anda dari mata-mata oleh penyerang.</p>
+            <p>Data tersebut mencakup semua jenis informasi rahasia—kredensial login, informasi pembayaran, dan aktivitas penelusuran secara umum.
+               Jadi, dengan kata lain: Protokol HTTPS sangat penting untuk menjaga privasi dan keamanan data Anda saat menjelajah web.</p>
+            <div class="materi-image-below">
+                 <img src="images/not-secure.png" alt="Ilustrasi Not Secure">
+            </div>
+            <p>Jadi, dengan kata lain: Protokol HTTPS sangat penting untuk menjaga privasi dan keamanan data Anda saat menjelajah web. Ini melindungi data Anda dari mata-mata oleh penyerang.</p>
           </div>
         </div>
       </div>
@@ -43,32 +52,29 @@
       <div class="section-materi">
         <h2>Apa yang membedakan HTTPS dengan HTTP?</h2>
         <div class="section-body">
-          <div class="content-left">
-            <div class="working-diagram">
-              <p>Brosur di bawah ini menjelaskan cara kerja internet yang umum dan sederhana:</p>
-              <img src="images/cara-kerja.png" alt="Diagram Cara Kerja Internet">
-            </div>
-
-            <div class="sub-section">
-              <h3>Bagaimana cara kerja protokol HTTPS?</h3>
-              <p>Dalam jaringan, paket adalah segmen kecil dari pesan yang lebih besar. Setiap paket berisi data dan informasi tentang data tersebut. Informasi tentang isi paket dikenal sebagai "header", dan ditempatkan di bagian depan paket agar mesin penerima tahu apa yang harus dilakukan dengan paket tersebut. Untuk memahami tujuan header paket, bayangkan bagaimana beberapa produk konsumen dilengkapi dengan instruksi perakitan.</p>
-              <p>Ketika data dikirim melalui internet, data tersebut pertama-tama dipecah menjadi paket-paket yang lebih kecil, yang kemudian diterjemahkan menjadi bit. Paket-paket tersebut dirutekan ke tujuannya oleh berbagai perangkat jaringan seperti router dan switch. Ketika paket-paket tersebut tiba di tujuannya, perangkat penerima menyusun kembali paket-paket tersebut secara berurutan dan kemudian dapat menggunakan atau menampilkan data tersebut.
-                Bandingkan proses ini dengan proses pembangunan Patung Liberty di Amerika Serikat. Patung Liberty pertama kali dirancang dan dibangun di Prancis. Namun, ukurannya terlalu besar untuk dimuat di kapal, sehingga dikirim ke Amerika Serikat dalam bentuk potongan-potongan, disertai instruksi tentang letak setiap potongan. Para pekerja yang menerima potongan-potongan tersebut kemudian menyusunnya kembali menjadi patung yang berdiri saat ini di New York.
-                Meskipun proses ini memakan waktu lama untuk Patung Liberty, pengiriman informasi digital dalam potongan-potongan kecil sangatlah cepat melalui internet. Misalnya, foto Patung Liberty yang disimpan di server web dapat melintasi dunia satu paket pada satu waktu dan dimuat di komputer seseorang dalam hitungan milidetik.</p>
-              <p>Paket dikirim melalui internet menggunakan teknik yang disebut packet switching. Router dan switch perantara dapat memproses paket secara independen satu sama lain, tanpa memperhitungkan sumber atau tujuan. Hal ini dirancang agar tidak ada koneksi tunggal yang mendominasi jaringan. Jika data dikirim antar komputer sekaligus tanpa packet switching, koneksi antara dua komputer dapat menggunakan beberapa kabel, router, dan switch selama beberapa menit. Intinya, hanya dua orang yang dapat menggunakan internet pada satu waktu — alih-alih jumlah orang yang hampir tak terbatas, seperti yang terjadi di dunia nyata.</p>
-            </div>
-          </div>
+            <p>Secara teknis, HTTPS bukanlah protokol yang terpisah dari HTTP. HTTPS hanya menggunakan enkripsi TLS/SSL melalui protokol HTTP. HTTPS beroperasi berdasarkan transmisi sertifikat TLS/SSL , yang memverifikasi bahwa penyedia tertentu memang benar-benar penyedia yang mereka klaim.</p>
+            <p>Ketika pengguna terhubung ke halaman web, halaman web tersebut akan mengirimkan sertifikat SSL-nya yang berisi kunci publik yang diperlukan untuk memulai sesi aman. Kedua komputer, klien dan server, kemudian menjalani proses yang disebut jabat tangan SSL/TLS, yaitu serangkaian komunikasi bolak-balik yang digunakan untuk membangun koneksi aman.</p>
+        </div>
+      </div>
+      
+      <div class="section-materi">
+        <h2>Bagaimana cara kerja protokol HTTPS?</h2>
+        <div class="section-body">
+            <p>HTTP mengirimkan data yang tidak terenkripsi, yang berarti informasi yang dikirim dari peramban dapat dicegat dan dibaca oleh pihak ketiga. Proses ini kurang ideal, sehingga diperluas ke HTTPS untuk menambahkan lapisan keamanan tambahan pada komunikasi. HTTPS menggabungkan permintaan dan respons HTTP dengan teknologi SSL dan TLS.</p>
+            <p>Situs web HTTPS harus mendapatkan sertifikat SSL/TLS dari otoritas sertifikat (CA) independen. Situs web ini membagikan sertifikat tersebut dengan peramban sebelum bertukar data untuk membangun kepercayaan. Sertifikat SSL juga berisi informasi kriptografi, sehingga server dan peramban web dapat bertukar data terenkripsi atau acak. Prosesnya seperti ini:</p>
+            <ol>
+              <li>Anda mengunjungi situs web HTTPS dengan mengetikkan format URL https:// di bilah alamat peramban Anda.</li>
+              <li>Peramban mencoba memverifikasi keaslian situs dengan meminta sertifikat SSL server.</li>
+              <li>Server merespons dengan sertifikat SSL-nya, yang berisi kunci publik.</li>
+              <li>Sertifikat SSL situs web membuktikan identitas server. Setelah peramban yakin, peramban menggunakan kunci publik untuk mengenkripsi dan mengirimkan pesan berisi kunci sesi rahasia.</li>
+              <li>Server mendekripsi kunci sesi <i>(private)</i> untuk mendekripsi pesan dan mengambil kunci sesi. Kemudian, server mengenkripsi kunci sesi dan mengirimkan pesan konfirmasi ke peramban.</li>
+              <li>Sekarang, browser dan server web berhasil menyalurkan kunci sesi yang sama untuk bertukar pesan yang aman.</li>
+            </ol>
         </div>
       </div>
 
     </div>
   </section>
-
-  <div class="sumber">
-    <p>Sumber:</p>
-    <p>Cloudflare — <i>What is HTTPS?</i></p>
-    <p>Semrush — <i>What Is HTTPS & How Does It Work?</i></p>
-  </div>
 
   <footer>
     <div class="footer-content">
@@ -77,19 +83,19 @@
           <img src="images/logo.png" alt="Logo Website">
         </div>
         <p>Website ini merupakan proyek tugas mata kuliah Pemrograman Web yang bertujuan untuk memperkenalkan konsep dasar cara kerja internet melalui tampilan interaktif dan informatif.</p>
-        <p class="credit">© 2025 Nabila Salabila Akbar S. All rights reserved.</p>
+        <p class="credit">© 2025 Nabila Salabila Akbar S. all rights reserved.</p>
       </div>
 
       <div class="footer-right">
         <div class="nav">
           <h4>Navigasi</h4>
-          <a href="all.html">Home</a>
-          <a href="all.html">Learn Path</a>
+          <a href="index.html#Home">Home</a>
+          <a href="index.html#Topics">Learn Path</a>
         </div>
         <div class="social">
           <h4>Social Media</h4>
           <a href="https://instagram.com/nblsaalsa" target="_blank"><i class="fa-brands fa-instagram"></i> @nblsaalsa</a>
-          <a href="https://linkedin.com/in/nbilasaalsa" target="_blank"><i class="fa-brands fa-linkedin"></i> Nabila Salsabila Akbar Sappe</a>
+          <a href="https://linkedin.com/in/nbilasaalsa" target="_blank"><i class="fa-brands fa-linkedin"></i> Nabila Salsabila Akbar S</a>
           <a href="https://github.com/salm1ina" target="_blank"><i class="fa-brands fa-github"></i> salm1ina</a>
         </div>
       </div>
