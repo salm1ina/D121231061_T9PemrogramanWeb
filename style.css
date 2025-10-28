@@ -354,3 +354,21 @@ footer {
     margin: 30px auto;
 }
 
+ol {
+    margin-left: 20px; 
+    padding-left: 10px; 
+    list-style-type: decimal; 
+    font-size: 16px; 
+}
+
+ol li {
+    margin-bottom: 10px; 
+    line-height: 1.4; 
+    text-align: justify;
+    color: #444; 
+}
+
+ol {
+    margin-left: 0; 
+    padding-left: 30px;
+}
