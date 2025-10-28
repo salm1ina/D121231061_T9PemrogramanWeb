@@ -177,7 +177,7 @@ footer {
   display: block;
 }
 
-/* BAGIAN SECTION CARA KERJA - Materi Dokumen */
+/* BAGIAN SECTION CARA KERJA INTERNET - Materi Dokumen */
 .materi-dokumen {
   padding: 50px 80px 20px; 
   max-width: 1200px; 
@@ -216,19 +216,30 @@ footer {
   flex: 2; 
 }
 
-.materi-image-right {
-  flex: 1; 
-  flex-shrink: 0;
-  width: 100%;
-  padding-top: 5px;
+.section-body.with-image {
+  display: flex;
+  flex-direction: row; 
+  gap: 40px;
+  align-items: top;
+  justify-content: space-between;
 }
 
+.section-body .text-content {
+  flex: 1.5;
+}
+
+.materi-image-below,
+.materi-image-right {
+  flex: 1;
+  text-align: left;
+}
+
+.materi-image-below img,
 .materi-image-right img {
-  width: 100%;
-  max-width: 400px; 
+  max-width: 400px;
   height: auto;
   display: block;
-  margin: 0; 
+  margin: 0;
 }
 
 .section-body p {
@@ -255,6 +266,7 @@ footer {
   margin: 10px auto;
   display: block;  
 }
+
 
 /* Sub-sections bagian Paket dan Protokol */
 .sub-section {
@@ -286,6 +298,7 @@ footer {
   flex-direction: column; 
   gap: 15px; 
   align-items: center; 
+}
 
 .image-pair-wrapper img {
   width: 100%; 
@@ -309,11 +322,7 @@ footer {
     border-radius: 0;
 }
 
-.materi-image-right img { 
-  display: none; 
-}
-
-/* ============= */
+/* BAGIAN SECTION CARA KERJA HTTPS - Materi Dokumen */
 .top-diagram-center {
     text-align: center; 
     margin-bottom: 30px; 
@@ -321,17 +330,10 @@ footer {
 }
 
 .top-diagram-center img {
-    max-width: 500px;
+    max-width: 650px;
     height: auto;
     display: block;
     margin: 0 auto;
-}
-
-
-.section-body.with-image {
-  display: block; 
-  gap: initial;
-  align-items: initial;
 }
 
 .section-body .text-content {
@@ -346,9 +348,9 @@ footer {
 }
 
 .materi-image-below img {
-    max-width: 70%; 
+    max-width: 50%; 
     height: auto;
     display: block;
     margin: 30px auto;
 }
-}
+
