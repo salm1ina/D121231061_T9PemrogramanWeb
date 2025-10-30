@@ -177,7 +177,27 @@ footer {
   display: block;
 }
 
+/* Sumber */
+.sumber {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto 40px; 
+    padding: 0 80px; 
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+}
+
+.sumber p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/*======================================================*/
 /* BAGIAN SECTION CARA KERJA INTERNET - Materi Dokumen */
+/*======================================================*/
 .materi-dokumen {
   padding: 50px 80px 20px; 
   max-width: 1200px; 
@@ -288,7 +308,6 @@ footer {
   padding: 0 80px; 
 }
 
-
 .materi {
   display: none; 
 }
@@ -321,8 +340,9 @@ footer {
     box-shadow: none;
     border-radius: 0;
 }
-
+/*===================================================*/
 /* BAGIAN SECTION CARA KERJA HTTPS - Materi Dokumen */
+/*===================================================*/
 .top-diagram-center {
     text-align: center; 
     margin-bottom: 30px; 
@@ -371,4 +391,55 @@ ol li {
 ol {
     margin-left: 0; 
     padding-left: 30px;
+}
+
+/*===================================================*/
+/* BAGIAN SECTION CARA KERJA HOSTING - Materi Dokumen */
+/*===================================================*/
+.materi-dokumen {
+  margin: 60px auto;
+  padding: 0 70px;
+  max-width: 1100px;
+}
+
+.materi-content h1 {
+  text-align: left;
+  color: #222;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.section-materi {
+  margin-bottom: 60px;
+}
+
+.section-materi h2 {
+  color: #333;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+.top-diagram-center {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.top-diagram-center img {
+  width: 80%;
+  max-width: 600px;
+  display: inline-block;
+}
+
+.section-body .text-content p {
+  color: #444;
+  text-align: justify;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.section-body .text-content ul {
+  color: #444;
+  padding-left: 20px;
+  line-height: 1.8;
+  list-style: disc;
 }
