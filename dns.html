@@ -24,16 +24,74 @@
 
   <section class="materi-dokumen">
     <div class="materi-content">
-      <h1>Coming Soon!</h1>
+      <h1>Cara Kerja DNS</h1>
+      <h2>Apa itu DNS?</h2>
+      <div class="top-diagram-center">
+          <img src="images\DNSPage.jpg" alt="Contoh Struktur Domain">
+      </div>
+      <div class="section-body">
+                <div class="text-content">
+                    <p>Domain Name System (DNS) adalah sistem yang berfungsi menerjemahkan nama domain menjadi IP address agar dapat dipahami oleh komputer saat Anda mengakses sebuah website menggunakan nama domain. Hal ini diperlukan karena komputer sebenarnya mengakses website melalui IP address, sedangkan manusia tentu akan kesulitan mengingat deretan angka tersebut. Fungsi DNS dapat diibaratkan seperti aplikasi ‘Kontak’ di smartphone yang menampilkan nama untuk setiap nomor telepon yang tersimpan. Dengan begitu, kita cukup mengetik nama domain seperti facebook.com tanpa perlu mengingat IP address-nya.</p>
+                    <p>Secara sederhana, DNS adalah server yang melayani permintaan untuk mengetahui IP address dari suatu domain. Misalnya, ketika Anda mengetik facebook.com, server DNS akan mencari dan menerjemahkan nama domain tersebut menjadi alamat IP yang sesuai sehingga komputer Anda dapat terhubung ke server Facebook.
+                       Penggunaan DNS server biasanya telah diatur secara otomatis pada setiap komputer dan oleh penyedia layanan internet (ISP). Namun, jika belum diatur, maka Anda perlu melakukan pengaturan di bagian IP address terlebih dahulu. Jika Anda menggunakan router, Anda juga dapat membuat server DNS sendiri, meskipun pada akhirnya pencarian IP address tetap dilakukan melalui penyedia layanan internet.</p>
+                </div>
       </div>
 
+      <h2>Apa Fungsi DNS?</h2>
+      <div class="section-body">
+                <div class="text-content">
+                    <p>DNS server merupakan sebuah database besar yang berfungsi menyimpan semua IP address yang digunakan dalam hostname. Database besar tersebut memuat banyak keterangan tentang IP addres jadi saat anda mengunjungi website tertentu. Misalnya youtube.com maka DNS server akan mentranslate atau menerjemahkannya ke IP address youtube.
+                       Sehingga anda bisa terhubung dengan youtube dan tampilan youtube akan keluar di pencarian anda. Agar lebih paham tentang fungsi DNS server, maka akan kita misalkan seperti buku telepon pada handphone. Misal nomor telepon 62857123xxxxx anda beri nama A di kontak anda. Nah saat anda ingin menghubungi nomor tersebut anda tinggal memilih kontak A. Nanti nomor dalam kontak A yang akan dihubungi sehingga anda bisa tersambung dengan pemilik nomor kontak A.</p>
+                    <p>Nomor telepon disini sama seperti IP address dan kontak A seperti hostname. Jadi saat anda mengakses kontak A maka phone book akan menerjemahkannya dalam nomor telepon kontak A atau saat anda mengakses suatu website maka DNS server akan menerjemahkannya dalam IP address website yang bersangkutan.
+                       Pengelolaan DNS itu terdiri dari tiga komponen utama yaitu DNS resolver, recursive DNS server, dan authoritative DNS server. DNS resolver merupakan klien yang diketahui sebagai komputer milik pengguna yang membuat permintaan DNS dari program tertentu. Sedangkan recursive DNS server merupakan pihak memberikan jawaban pada resolver berupa hasil pencarian DNS yang diminta.</p>
+                </div>
+
+      <h2>Bagian-Bagian DNS</h2>
+      <div class="section-body">
+                <div class="text-content">
+                    <p>Jika diibaratkan sebagai sebuah hierarki, DNS adalah sistem dengan beragam lapisan yang saling terkait satu sama lain pada domain. Lapisan-lapisan yang perlu kamu ketahui dari DNS adalah:</p>
+
+                    <div class="sub-section">
+                    <h3>1. Level Root Domain</h3>
+                    <p>Bagian level root dari DNS adalah lapisan yang menempati posisi paling atas. Kamu dapat mengetahui level root dengan cara melihat bagian titik (.) di sebuah URL (Uniform Resource Locator).
+                       URL adalah kumpulan berbagai karakter dengan format yang sudah memenuhi standar tertentu supaya dapat diakses secara umum. Dengan adanya URL, kamu dapat mengakses ragam informasi dalam bentuk dokumen, gambar maupun teks.</p>
+                    
+                    <div class="sub-section">
+                    <h3>2. Level Top Domain</h3>
+                    <p>Bagian top domain DNS adalah bentuk ekstensi dari sebuah URL yang posisinya berada di bagian depan level root domain. Pada bagian ini, level top domain, atau biasa disingkat dengan sebutan LTD, mempunyai dua jenis, yakni CCTLD (Country Code Top Level Domain) dan GTLD (Generic Top Level Domain). Sama seperti namanya, CCTLD adalah kode khusus yang hanya berlaku pada wilayah tertentu saja pada sebuah negara. Misalnya, ketika kamu melihat URL yang di bagian belakangnya diakhiri .id, berarti situs tersebut berada di wilayah Indonesia, .jpn di wilayah Jepang, dan .sgp di wilayah Singapura.</p>
+                    <p>Sedangkan GTLD sifatnya lebih global dan universal karena dapat digunakan di berbagai macam negara, seperti akhiran .com, .net, dan .org.</p>
+
+                    <div class="sub-section">
+                    <h3>3. Level Second Domain</h3>
+                    <p>Level second domain adalah nama dari sebuah situs. Misalnya saja www.jagoanhosting.com. Nah, nama “jagoanhosting” merupakan level second domain yang diperuntukkan sebagai identitas situs ketika diakses.</p>
+                    
+                    <div class="sub-section">
+                    <h3>4. Level Third Domain</h3>
+                    <p>Menempati posisi paling rendah dalam hierarki DNS, Level Third Domain lebih dikenal dengan sebutan sub-domain yang lokasinya berada pada bagian kiri level second domain.
+                       Sebagai contohnya adalah https://murahmeriah.jagoanhosting.com. Jika dibedah, bagian “murah meriah” adalah sub-domain, lalu disusul “Jagoan Hosting” sebagai nama pada sebuah domain, dan diakhiri dengan “.com” sebagai level top domain.
+                    </p>
+
+                    <div class="sub-section">
+                    <h3>5. Hostname</h3>
+                    <p>Hostname mempunyai posisi paling awal di sebuah URL yang menunjukkan fungsi dari sebuah situs di internet, misalnya saja seperti https://jagoanhosting.com. Nah, bagian https itulah yang disebut sebagai hostname.</p>
+                </div>
+
+      <h2>Cara Kerja DNS</h2>
+      <div class="section-body">
+                <div class="text-content">
+                  <p>Terdapat 5 tahapan cara kerja DNS, dimulai dari DNS query (yakni sistem akan memproses request menuju DNS server ketika kamu mengetik URL sebuah situs) yang akan didistribusikan melalui sistem cache jika dirasa informasi tersebut tidak tersedia pada filehost. Selanjutnya berpindah menuju DNS recursor. Ketika kamu memasukkan URL akan tetapi sistem masih belum bisa menemukan informasi yang dibutuhkan, maka pencarian akan diarahkan menuju Internet Service Provider (ISP).</p>
+                  <p>Setelah dari DNS recursor lanjut ke bagian root name server untuk menggali informasi lebih dalam ketika pada tahap sebelumnya masih belum bisa menemukan informasi yang dibutuhkan. Root name server mempunyai sistem layaknya database dan mampu menyediakan IP address dan nama sebuah domain.
+                    Saat nama domain dan IP address berhasil ditemukan, maka cara kerja DNS selanjutnya pindah ke tahap TLD name server untuk melakukan pengecekan dan membaca informasi lebih detail, tentunya memanfaatkan server spesifik hingga akhirnya didistribusikan menuju bagian akhir, yakni Authoritative Name Server dan menampilkan informasi yang kamu butuhkan.</p>
+                </div>
+      </div>
     </div>
   </section>
 
   <div class="sumber">
     <p>Sumber:</p>
-    <p>Cloudflare — <i>does the Internet work?</i></p>
-    <p>ExplainThatStuff — <i>How the Internet Works: A Simple Introduction</i></p>
+    <p>Dinas Kominfo Kab. Kubu Raya — <i>Bingung Apa itu DNS? Perhatikan Penjelasan Fungsi dan Cara Kerjanya</i></p>
+    <p>Hostinger — <i>Apa itu DNS? Pengertian, kegunaan, dan tipe record DNS</i></p>
+    <p>jagoanhosting — <i>Apa itu DNS? Arti, Fungsi, Contoh & Cara Kerja</p>
   </div>
 
   <footer>
